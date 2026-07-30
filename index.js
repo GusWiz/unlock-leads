@@ -1,9 +1,14 @@
 const inputBtn = document.getElementById("input-btn")
 const inputEl = document.getElementById("input-el") 
-myInputs = []
+myLeads = ["awesomeLeans", "www1241", "werwer141"]
+
+ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function() {
-    myInputs.push(inputEl.value)
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
 })
 
-console.log(myInputs)
+for (let i = 0; i < myLeads.length; i++) {
+    ulEl.innerHTML += "<li>" + myLeads[i] + '</li>'
+}

@@ -20,3 +20,7 @@ button {
     font-weight: bold;
     border: none;
 }
+
+h2 {
+    margin: 0;
+}
