@@ -15,7 +15,9 @@ function renderLead() {
     // let listItem = "<li>" + myLeads[myLeads.length - 1] + "</li>"
     let listItem = `
     <li>
-        <a target='_blank' href='${inputEl.value}'>${inputEl.value}</a>
+        <a target='_blank' href='${inputEl.value}'>
+            ${inputEl.value}
+        </a>
     </li>
     `
     ulEl.innerHTML += listItem
