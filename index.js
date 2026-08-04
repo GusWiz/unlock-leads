@@ -1,7 +1,9 @@
 myLeads = []
 const inputBtn = document.getElementById("input-btn")
 const inputEl = document.getElementById("input-el") 
+const deleteBtn = document.getElementById("delete-btn")
 ulEl = document.getElementById("ul-el")
+
 
 leadsFromLocalStorage = localStorage.getItem("myLeads")
 
@@ -19,6 +21,11 @@ inputBtn.addEventListener("click", function() {
     renderLeads()
 })
 
+deleteBtn.addEventListener("dblclick", function() {
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+})
 function renderLeads() {
     // let listItem = "<li>" + myLeads[myLeads.length - 1] + "</li>"
     let listItems = ""

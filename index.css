@@ -19,8 +19,12 @@ button {
     padding: 10px 20px;
     font-size: 12px;
     font-weight: bold;
-    border: none;
+    border: 1px solid #5f9341;
 }
+
+#delete-btn {
+    background-color: white;
+    color: #5f9341;}
 
 h2 {
     margin: 0;
